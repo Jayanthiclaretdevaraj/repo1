@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Greeting Card Generator</title>
+</head>
+<body>
+    <h1>Upload Your Image</h1>
+    <form action="https://YOUR_S3_BUCKET.s3.amazonaws.com/" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" />
+        <button type="submit">Upload</button>
+    </form>
+    <h2>Processed Image</h2>
+    <img id="processed-image" src="" alt="Processed Greeting" />
+</body>
+<script>
+    // JavaScript can dynamically load the processed image using the API Gateway URL.
+</script>
+</html>
